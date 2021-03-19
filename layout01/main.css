@@ -1,0 +1,396 @@
+/* body, main & hero */
+html {
+    /* scroll down #main & .panel ↓see .panel */
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+#hero {
+    background-image: url("img/heroback.jpg");
+    background-color: #f0f3f2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 25px;
+
+}
+.hero-inner {
+    width: 1024px;
+    margin: 0 auto;
+}
+/* Header Area */
+header {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+header .logo {
+    width: 75px;
+}
+
+header #headmenu {
+    margin: 0 0 45px 0;
+    padding: 0;
+}
+
+header #headmenu li {
+    display: inline-block;
+    margin: 0 0 0 35px;
+    padding: 0;
+}
+
+header #headmenu li a {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    text-decoration: none;
+}
+
+header #headmenu li a:hover {
+    color:#000000;
+    transition:  color 0.5s ease-in;
+}
+
+/* Hero Inner Area */
+#hero .hero-inner .hero-content .name-title {
+    color: #ffffff;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 65px;
+    font-weight:lighter;
+    margin: 75px 0 5px 0;
+}
+
+#hero .hero-inner .hero-content .sub-title {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 5px 0;
+    width: 250px;;
+}
+
+#hero .hero-inner .hero-content .sub-title:after {
+    content: " ";
+    display: block;
+    padding: 5px;
+    border-bottom: 2px solid #63F6DF;
+  }
+
+  #hero .hero-inner .hero-content .description {
+      color: #ffffff;
+      display: block;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 24px;
+      margin: 15px 0;
+      width: 500px;
+  }
+
+.followme {
+    padding: 45px 0 65px 0;
+    /*margin: 25px 0 50px 0;*/
+    
+}  
+.followme li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 15px 0 0;
+    line-height: 4em;
+}
+
+.followme .fab {
+    color: #63F6DF;
+    font-size: 32px;
+    
+}
+
+.followme-title {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 45px;
+}
+
+/* Font icon effect https://codepen.io/dig-lopes/pen/WLVGda */
+ul.followme li a {
+    position: relative; 
+    display: block;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 63px;
+    background: #333;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #666;
+
+
+        -webkit-animation-name: bounce-animation;
+        animation-name: bounce-animation;
+        -webkit-animation-duration: 2.5s;
+        animation-duration: 2.5s;
+        -webkit-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        transform-origin: 70% 70%;
+        display: inline-block;
+    }
+    @keyframes bounce-animation {
+        0%, 100% {
+            transform: translateY(5px);
+        }
+        50% {
+            transform: translateY(-10px);
+        }
+    }
+  
+ul.followme li a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: #333333;
+    transition: .5s;
+    transform: scale(.9);
+    z-index: -1;
+  }
+
+ul.followme li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #00adff;
+  }
+  
+
+
+  /* rounded buttons */
+#now-more {
+    background-color: rgb(255, 255, 255);
+    border-color: rgb(0, 0, 0);
+    border-radius: 30px;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+    margin: 0;
+    padding: 16px 36px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+#now-more:hover {
+    background-color: #E54684;
+}
+
+#contact-hero {
+    background-color: rgb(150, 131, 248);
+    border-color: #ffffff;
+    box-sizing: border-box;
+    border-radius: 30px;
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+    margin: 0;
+    padding: 16px 36px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+#contact-hero:hover {
+    background-color:#E54684;
+}
+
+#contact {
+    background-color: rgb(150, 131, 248);
+    border-color: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+    color: rgb(10, 10, 10);
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 17px;
+    margin: 0;
+    padding: 16px 36px;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+#contact:hover {
+    background-color:#E54684;
+}
+
+/* scroll down #main & .panel ↑see html */
+.panel {
+    height: 600px;
+  
+    -webkit-transform: translateZ( 0 );
+    transform: translateZ( 0 );
+    -webkit-transition: -webkit-transform 0.6s ease-in-out;
+    transition: transform 0.6s ease-in-out;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;   
+}
+
+/* Other sections > #services */
+#services {
+    background-color: #7f53ea;
+    padding: 50px;
+}
+
+#services .main-panel-title {
+    color: #ffffff;
+    font-family: 'Merriweather Sans', sans-serif;
+    line-height: 45px;
+    font-size: 42px;
+    font-weight:lighter;
+    text-align: center;
+}
+
+#service-list {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;    
+    margin: 0 auto !important;
+    padding: 0 !important;
+    width: 80%;
+}
+
+#service-list li {
+    height: 108px;
+    padding: 25px 75px;
+    text-align: center;
+    width: 168px;
+}
+
+.text-services {
+    color: #ffffff; 
+    display: block;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin: 25px auto;
+    text-align: center;
+    width: 60%;
+}
+
+.shorthand { 
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+  }
+
+.serviceimg:hover {
+    animation: fadeIn 1s ease-in both;
+
+}
+
+#service-list li a {
+    color: #ffffff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    margin-top: 25px;
+    text-decoration: none
+}
+
+/* blink effect on hover */
+#service-list li a:hover {
+    animation:blinkingText 1.2s infinite;
+}
+
+@keyframes blinkingText{
+    0%{     color: #ff458f;    }
+    49%{    color: #f2759e; }
+    60%{    color: #7e65d0; }
+    99%{    color: #f2759e;  }
+    100%{   color: #7e65d0    }
+}
+
+/* Other sections > #portfolio */
+.fa-project-diagram {
+    color: #eefe5e;
+    border: 1px #eefe5e solid;
+    border-radius: 50%;
+    font-size: 36px;
+    padding: 25px;
+    text-align: center !important;
+}
+#portfolio {
+    background-color: #2C2E3C;
+    color: #ffffff;
+    padding: 50px;
+}
+
+#portfolio h1 {
+    color: #2a2a2a;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 42px;
+    font-weight:lighter;
+    margin-bottom: 25px;
+}
+
+.grid {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.grid figure {
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 21.333%;
+}
+
+/* Content Area */
+
+/* Footer Area */
+
+/* Back to Top  */
+.back-to-top-link {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 2rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #333;
+    /* Emoji don't behave like regular fonts so this helped position it correctly */
+    padding: 0.25rem;
+}
+/* How far of a scroll travel within <main> prior to the
+   link appearing */
+
+   .back-to-top-wrapper {
+     outline: none;
+     position: sticky;
+     top: 75vh;
+     right: 0.25rem;
+     bottom: -5em;
+     width: 3em;
+     pointer-events: none;
+   }
