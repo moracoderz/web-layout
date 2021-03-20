@@ -76,18 +76,6 @@ h1 {
     margin: 0 0 0 40px;
 }
 
-.bckButton {
-    color: #00b5bb;
-    display: block;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-top:50px;
-    text-align: center;
-}
-
-.bckButton:hover {
-    color: #9659A1;
-}
-
 @keyframes pulse {
     from {
         stroke-width: 3px;
