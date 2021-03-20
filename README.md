@@ -2,5 +2,5 @@
 
 Hmtl Basics: html tags + semantics + flexbox + forms + Css + sass
 
-[Main menu](https://mripz.github.io/web-layout/)  
-[Layout 01 - Simple desktop layout:Html + CSS only](https://mripz.github.io/web-layout/layout01/)  
+<a href="https://mripz.github.io/web-layout/">Main menu</a>  
+<a href="https://mripz.github.io/web-layout/layout01/">Layout 01 - Simple desktop layout:Html + CSS only</a>
