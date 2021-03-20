@@ -1,0 +1,102 @@
+body {
+    background-color: #DFDBE5;
+    background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23766d85' fill-opacity='0.06'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+#mainTitle {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+}
+.fa-laptop-code {
+    color:#9659A1;
+    margin-left: 15px;
+}
+.bounce {
+    -webkit-animation-name: bounce-animation;
+    animation-name: bounce-animation;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+@keyframes bounce-animation {
+    0%, 100% {
+        transform: translateY(5px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+.fa-terminal {
+    color:#8a01a2;
+    margin-right: 15px;
+}
+#mainContent {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#classList {
+    margin:0;
+    padding: 0;
+}
+#classList li { 
+    list-style: none;
+    margin: 20px; 
+    line-height: 20px;
+}
+#classList li a {
+    color: #00b5bb;
+    text-decoration: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    background-image: linear-gradient(#9659A1, #9659A1), linear-gradient(#00b5bb, #00b5bb);
+    background-size: 100% 2px, 100% 2px;
+    background-position: 100% 100%, 0 100%;
+    background-repeat: no-repeat;
+    transition: background-size 1s linear;
+}
+#classList li  a:hover {
+    background-size: 0 2px, 100% 2px;
+  }
+.subdescription {
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0 0 0 40px;
+}
+
+@keyframes pulse {
+    from {
+        stroke-width: 3px;
+        stroke-opacity: 1;
+        transform: scale(0.3);
+    }
+    to {
+        stroke-width: 0;
+        stroke-opacity: 0;
+        transform: scale(2);
+    }
+}
+
+@media screen and (max-width: 960px) {
+    #mainContent  {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #classList {
+        margin: 0;
+        padding: 0;
+        width: 43.333%;
+    }
+}
