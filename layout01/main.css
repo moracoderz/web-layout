@@ -80,23 +80,23 @@ header #headmenu li a:hover {
     display: block;
     padding: 5px;
     border-bottom: 2px solid #63F6DF;
-  }
+}
 
-  #hero .hero-inner .hero-content .description {
-      color: #ffffff;
-      display: block;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 16px;
-      line-height: 24px;
-      margin: 15px 0;
-      width: 500px;
-  }
+#hero .hero-inner .hero-content .description {
+    color: #ffffff;
+    display: block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 15px 0;
+    width: 500px;
+}
 
 .followme {
     padding: 45px 0 65px 0;
     /*margin: 25px 0 50px 0;*/
-    
-}  
+}
+
 .followme li {
     display: inline-block;
     list-style: none;
@@ -107,7 +107,6 @@ header #headmenu li a:hover {
 .followme .fab {
     color: #63F6DF;
     font-size: 32px;
-    
 }
 
 .followme-title {
@@ -131,26 +130,25 @@ ul.followme li a {
     border-radius: 50%;
     font-size: 30px;
     color: #666;
-
-
-        -webkit-animation-name: bounce-animation;
-        animation-name: bounce-animation;
-        -webkit-animation-duration: 2.5s;
-        animation-duration: 2.5s;
-        -webkit-animation-iteration-count: infinite;
-        animation-iteration-count: infinite;
-        transform-origin: 70% 70%;
-        display: inline-block;
+    -webkit-animation-name: bounce-animation;
+    animation-name: bounce-animation;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    transform-origin: 70% 70%;
+    display: inline-block;
+}
+    
+@keyframes bounce-animation {
+    0%, 100% {
+        transform: translateY(5px);
     }
-    @keyframes bounce-animation {
-        0%, 100% {
-            transform: translateY(5px);
-        }
-        50% {
-            transform: translateY(-10px);
-        }
+    50% {
+        transform: translateY(-10px);
     }
-  
+}
+
 ul.followme li a::before {
     content: '';
     position: absolute;
@@ -163,16 +161,14 @@ ul.followme li a::before {
     transition: .5s;
     transform: scale(.9);
     z-index: -1;
-  }
+}
 
 ul.followme li a:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #00adff;
-  }
-  
+}
 
-
-  /* rounded buttons */
+/* rounded buttons */
 #now-more {
     background-color: rgb(255, 255, 255);
     border-color: rgb(0, 0, 0);
@@ -190,6 +186,7 @@ ul.followme li a:hover::before {
     white-space: nowrap;
     transition: 0.3s;
 }
+
 #now-more:hover {
     background-color: #E54684;
 }
@@ -211,6 +208,7 @@ ul.followme li a:hover::before {
     white-space: nowrap;
     transition: 0.3s;
 }
+
 #contact-hero:hover {
     background-color:#E54684;
 }
@@ -231,6 +229,7 @@ ul.followme li a:hover::before {
     white-space: nowrap;
     transition: 0.3s;
 }
+
 #contact:hover {
     background-color:#E54684;
 }
@@ -238,7 +237,6 @@ ul.followme li a:hover::before {
 /* scroll down #main & .panel ↑see html */
 .panel {
     height: 600px;
-  
     -webkit-transform: translateZ( 0 );
     transform: translateZ( 0 );
     -webkit-transition: -webkit-transform 0.6s ease-in-out;
@@ -296,7 +294,7 @@ ul.followme li a:hover::before {
     flex-wrap: wrap;
     -webkit-flex-direction: row;
     flex-direction: row;
-  }
+}
 
 .serviceimg:hover {
     animation: fadeIn 1s ease-in both;
@@ -385,12 +383,12 @@ ul.followme li a:hover::before {
 /* How far of a scroll travel within <main> prior to the
    link appearing */
 
-   .back-to-top-wrapper {
-     outline: none;
-     position: sticky;
-     top: 75vh;
-     right: 0.25rem;
-     bottom: -5em;
-     width: 3em;
-     pointer-events: none;
-   }
+.back-to-top-wrapper {
+    outline: none;
+    position: sticky;
+    top: 75vh;
+    right: 0.25rem;
+    bottom: -5em;
+    width: 3em;
+    pointer-events: none;
+}
